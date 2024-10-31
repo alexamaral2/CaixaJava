@@ -89,27 +89,27 @@ public class CaixaEletronico {
 
 		int qtdNotas100 = 0, qtdNotas50 = 0, qtdNotas20 = 0, qtdNotas10 = 0, qtdNotas5 = 0, qtdNotas2 = 0;
 
-		while (valorSaque >= 100 && this.notas100 > 0) {
+		while (valorSaque >= 100 && this.notas100 > qtdNotas100) {
 			qtdNotas100++;
 			valorSaque -= 100;
 		}
-		while (valorSaque >= 50 && this.notas50 > 0) {
+		while (valorSaque >= 50 && this.notas50 > qtdNotas50) {
 			qtdNotas50++;
 			valorSaque -= 50;
 		}
-		while (valorSaque >= 20 && this.notas20 > 0) {
+		while (valorSaque >= 20 && this.notas20 > qtdNotas20) {
 			qtdNotas20++;
 			valorSaque -= 20;
 		}
-		while (valorSaque >= 10 && this.notas10 > 0) {
+		while (valorSaque >= 10 && this.notas10 > qtdNotas10) {
 			qtdNotas10++;
 			valorSaque -= 10;
 		}
-		while (valorSaque >= 5 && this.notas5 > 0) {
+		while (valorSaque >= 5 && this.notas5 > qtdNotas5) {
 			qtdNotas5++;
 			valorSaque -= 5;
 		}
-		while (valorSaque >= 2 && this.notas2 > 0) {
+		while (valorSaque >= 2 && this.notas2 > qtdNotas2) {
 			qtdNotas2++;
 			valorSaque -= 2;
 		}
